@@ -7,7 +7,7 @@ lapply(libraries, function(x) if (!(x %in% installed.packages())) {
 lapply(libraries, library, quietly = TRUE, character.only = TRUE)
 
 # set working directory 
-setwd("/home/rama/Masterarbeit/masterThesisRomanLykhnenko")
+setwd("/home/rama/Masterarbeit/pricing_kernels_and_implied_volatility")
 
 # load precomputed object
 load("epkLocLinRndLocConstPD/locLinBW.RData")

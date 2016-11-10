@@ -1,6 +1,6 @@
 Name of QuantLet : epkLocLinRndLocConstPD
 
-Published in : MasterThesisRomanLykhnenko
+Published in : pricing_kernels_and_implied_volatility
 
 Description : 'Estimates and plots (yearly) empirical pricing kernels (EPK), risk neutral densities (RND) and physical densities (PD) of DAX
 30 index return conditional on 20% (red curve), 40% (green curve) and 60% (blue curve) quantiles of volatility index VDAX-NEW (current year), and time to maturity 1 month. Local linear kernel regression is used for estimation of the conditional risk neutral density and local constant kernel regression is used for estimation of conditional physical density. Moreover, 95% confidence intervals have been calculated for PK, RND and PD conditioned by 40% quantile of VDAX-NEW and time to maturity 1 month. All results are shown on a continuously compounded 1-month period returns scale. '

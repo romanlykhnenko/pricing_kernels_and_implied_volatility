@@ -1,6 +1,6 @@
 Name of QuantLet : locLinBW
 
-Published in : MasterThesisRomanLykhnenko
+Published in : pricing_kernels_and_implied_volatility
 
 Description : 'Selects bandwidth for multivariate local linear kernel regression using cross-validation '
 

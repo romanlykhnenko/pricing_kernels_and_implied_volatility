@@ -9,9 +9,9 @@ Keywords : 'pricing kernel, risk neutral density, physical density, kernel regre
 
 See also : 'epk3VolaIntervalsVDAX, epk3VolaIntervalsVDAX2m'
 
-Author : 'Roman Lykhnenko'
+Author : Roman Lykhnenko
 
-Submitted :
+Submitted : Roman Lykhnenko
 
 Datafile : 'C_2008vdax1m.csv, C_2009vdax1m.csv, C_2010vdax1m.csv, C_2011vdax1m.csv, C_2012vdax1m.csv, timeSeriesDaxVdax1m.csv, bandwidthMonKfoldCVyears1m.RData'
 

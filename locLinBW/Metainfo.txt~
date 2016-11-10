@@ -8,10 +8,9 @@ Keywords :  kernel regression, bandwidth, cross-validation, local linear, least-
 
 Author : Roman Lykhnenko
 
-Submitted : 
+Submitted : Roman Lykhnenko
 
-Datafile : 'C_2002.csv, C_2003.csv, C_2004.csv, C_2005.csv, C_2005.csv, C_2006.csv, C_2007.csv, C_2008.csv, C_2009.csv, C_2010.csv
-C_2011.csv, C_2012.csv, timeSeriesDaxVdax.csv, bandwidthMonKfoldCVyears.RData'
+Datafile : 'C_2012vdax1m.csv, C_2012vdax2m.csv,  C_2012.csv'
 
 
 
