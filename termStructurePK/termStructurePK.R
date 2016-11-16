@@ -7,7 +7,7 @@ lapply(libraries, function(x) if (!(x %in% installed.packages())) {
 lapply(libraries, library, quietly = TRUE, character.only = TRUE)
 
 # set working directory
-setwd("/home/rama/Masterarbeit/pricing_kernels_and_implied_volatility0")
+setwd("/home/rama/Masterarbeit/pricing_kernels_and_implied_volatility")
 
 # load Dax and VDax data
 bothIndexesDax      = read.csv("termStructurePK/timeSeriesDaxVdax.csv")
@@ -55,8 +55,8 @@ pk1mVDAX = function(bothIndexesDax, numberPK){
     lowVolaIntDown  = quantile(bothIndexesDaxQuant$VDAX, 0.05)
     
     
-    vola_levels = as.character(seq(from = as.numeric(lowVolaIntUp), 
-                                   to = as.numeric(mediumVolaIntUp), 
+    vola_levels = as.character(seq(from       = as.numeric(lowVolaIntUp), 
+                                   to         = as.numeric(mediumVolaIntUp), 
                                    length.out = numberPK))
     
     listRndPDpk = list()
