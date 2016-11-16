@@ -1,0 +1,20 @@
+
+Name of QuantLet : termStructurePK
+
+Published in : pricing_kernels_and_implied_volatility
+
+Description : 'Estimates and plots (yearly) empirical pricing kernels (EPK) of DAX 30 index return conditional on times to maturity 1, 2 and 3 months and different levels of VDAX-NEW (10 equally spaced numbers from 35% to 65% quantile of VDAX-NEW in a given year). VDAX-NEW (and VDAX-NEW-Subindex 1), VDAX-NEW-Subindex 2 and VDAX-NEW-Subindex 3 were used for estimation of pricing kernels condiotioned by time to maturity 1, 2 and 3 months respectively. Local linear kernel regression is used for estimation of the conditional risk neutral density and local constant kernel regression is used for estimation of conditional physical density.'
+
+Keywords : 'pricing kernel, risk neutral density, physical density, kernel regression, volatility.'
+
+See also : 'epk3VolaIntervalsVDAX, epk3VolaIntervalsVDAX1m, epk3VolaIntervalsVDAX2m'
+
+Author : Roman Lykhnenko
+
+Submitted : Roman Lykhnenko
+
+Datafile : 'C_2012vdax1m.csv, C_2012vdax2m.csv, C_2012vdax3m.csv, C_2012.csv, locLinBWvdax1m.RData, locLinBWvdax2m.RData, 
+locLinBWvdax3m.RData, locLinBW.RData, timeSeriesDaxVdax1m.csv, timeSeriesDaxVdax2m.csv, timeSeriesDaxVdax3m.csv, timeSeriesDaxVdax.csv'
+
+Example :
+- 'The estimated conditional pricing kernels for year 2012. For more details see Description.'
