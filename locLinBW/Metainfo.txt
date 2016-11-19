@@ -11,4 +11,10 @@ Author : Roman Lykhnenko
 
 Submitted : Roman Lykhnenko
 
-Datafile : 'C_2012vdax1m.csv, C_2012vdax2m.csv,  C_2012.csv'
+Datafile : 'C_2012.csv'
+
+Input:
+            - C_2012.csv            : Call prices 2012 
+            
+Output
+            - locLinBW.RData        : Bandwidths used for estimation of RND based on local linear kernel regression
