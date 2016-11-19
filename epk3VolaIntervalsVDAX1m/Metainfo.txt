@@ -13,12 +13,23 @@ of volatility within each interval. All results are shown on a continuously comp
 
 Keywords : pricing kernel, risk neutral density, physical density, kernel regression, volatility, dax, vdax, kernel, regression, risk
 
-See also : epk3VolaIntervalsVDAX, epk3VolaIntervalsVDAX2m
+See also : epk3VolaIntervalsVDAX, epk3VolaIntervalsVDAX2m, epk3VolaIntervalsVDAX3m, locLinBW, termStructurePK
 
 Author : Roman Lykhnenko
 
 Submitted : Roman Lykhnenko
 
-Datafile : 'C_2008vdax1m.csv, C_2009vdax1m.csv, C_2010vdax1m.csv, C_2011vdax1m.csv, C_2012vdax1m.csv, timeSeriesDaxVdax1m.csv, bandwidthMonKfoldCVyears1m.RData'
+Datafile : 'C_2012vdax1m.csv, timeSeriesDaxVdax1m.csv, locLinBWvdax1m.RData'
 
-Example : The estimated conditional pricing kernels, risk neutral and physical densities for year 2012. For more details see Description.
+Input:
+            - timeSeriesDaxVdax1m.csv : Time series of VDAX-NEW-Subindex 1 and DAX 30 index 
+            - C_2012vdax1m.csv        : Call prices 2012 
+            - locLinBWvdax1m.RData    : Bandwidths used for estimation of RND based on local linear kernel regression
+            
+Output: 
+            - listRndPDpkVDAX1m2012.RData         : Estimated conditional pricing kernels, risk neutral and physical densities
+            - epk3VolaIntervalsVDAX1m_RND2012.png : Plot of estimated conditional risk neutral densities
+            - epk3VolaIntervalsVDAX1m_PD2012.png  : Plot of estimated conditional physical densities
+            - epk3VolaIntervalsVDAX1m_PK2012.png  : Plot of estimated conditional pricing kernels
+            
+Example : 'The estimated conditional pricing kernels, risk neutral and physical densities for year 2012. For more details see Description.'
