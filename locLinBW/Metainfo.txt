@@ -3,7 +3,7 @@ Name of QuantLet : locLinBW
 
 Published in : pricing_kernels_and_implied_volatility
 
-Description : 'Selects bandwidth for multivariate local linear kernel regression using cross-validation.'
+Description : 'Selects bandwidth for multivariate local linear kernel regression using cross-validation'
 
 Keywords :  kernel regression, bandwidth, cross-validation, local linear, least-squares, kernel, regression, multivariate
 
@@ -13,8 +13,9 @@ Submitted : Roman Lykhnenko
 
 Datafile : 'C_2012.csv'
 
+
 Input:
             - C_2012.csv            : Call prices 2012 
             
-Output
+Output:
             - locLinBW.RData        : Bandwidths used for estimation of RND based on local linear kernel regression
