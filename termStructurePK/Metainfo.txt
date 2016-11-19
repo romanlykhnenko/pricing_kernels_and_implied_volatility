@@ -7,7 +7,7 @@ Description : 'Estimates and plots (yearly) empirical pricing kernels (EPK) of D
 
 Keywords : 'pricing kernel, risk neutral density, physical density, kernel regression, volatility, dax, vdax, kernel, regression, risk'
 
-See also : 'epk3VolaIntervalsVDAX, epk3VolaIntervalsVDAX1m, epk3VolaIntervalsVDAX2m'
+See also : 'epk3VolaIntervalsVDAX, epk3VolaIntervalsVDAX1m, epk3VolaIntervalsVDAX2m, locLinBW, epk3VolaIntervalsVDAX3m'
 
 Author : Roman Lykhnenko
 
@@ -32,9 +32,9 @@ Input:
             
 Output:
 
-            - termStructurePK_main_PK2012.png  : Plot of empirical pricing kernels of DAX 30 index return conditional on time to maturity 1 month and different levels of VDAX-NEW (10 equally spaced numbers from 35% to 65% quantile of VDAX-NEW in 2012). VDAX-NEW can be used with time to maturity 1 month since VDAX-NEW assumes time to maturity 30 days by construction
-            - termStructurePK_VDAX1mPK2012.png : Plot of empirical pricing kernels of DAX 30 index return conditional on time to maturity 1 month and different levels of VDAX-NEW (10 equally spaced numbers from 35% to 65% quantile of VDAX-NEW in 2012). VDAX-NEW-Subindex 1 was used since time to maturity 1 month is considered.
-            - termStructurePK_VDAX2mPK2012.png : Plot of empirical pricing kernels of DAX 30 index return conditional on time to maturity 2 months and different levels of VDAX-NEW (10 equally spaced numbers from 35% to 65% quantile of VDAX-NEW in 2012). VDAX-NEW-Subindex 2 was used since time to maturity 2 months is considered.
-            - termStructurePK_VDAX3mPK2012.png : Plot of empirical pricing kernels of DAX 30 index return conditional on time to maturity 3 months and different levels of VDAX-NEW (10 equally spaced numbers from 35% to 65% quantile of VDAX-NEW in 2012). VDAX-NEW-Subindex 3 was used since time to maturity 3 months is considered.
+            - termStructurePK_main_PK2012.png  : ' Plot of empirical pricing kernels of DAX 30 index return conditional on time to maturity 1 month and different levels of VDAX-NEW (10 equally spaced numbers from 35% to 65% quantile of VDAX-NEW in 2012). VDAX-NEW can be used with time to maturity 1 month since VDAX-NEW assumes time to maturity 30 days by construction.'
+            - termStructurePK_VDAX1mPK2012.png : 'Plot of empirical pricing kernels of DAX 30 index return conditional on time to maturity 1 month and different levels of VDAX-NEW (10 equally spaced numbers from 35% to 65% quantile of VDAX-NEW in 2012). VDAX-NEW-Subindex 1 was used since time to maturity 1 month is considered.'
+            - termStructurePK_VDAX2mPK2012.png : 'Plot of empirical pricing kernels of DAX 30 index return conditional on time to maturity 2 months and different levels of VDAX-NEW (10 equally spaced numbers from 35% to 65% quantile of VDAX-NEW in 2012). VDAX-NEW-Subindex 2 was used since time to maturity 2 months is considered.'
+            - termStructurePK_VDAX3mPK2012.png : 'Plot of empirical pricing kernels of DAX 30 index return conditional on time to maturity 3 months and different levels of VDAX-NEW (10 equally spaced numbers from 35% to 65% quantile of VDAX-NEW in 2012). VDAX-NEW-Subindex 3 was used since time to maturity 3 months is considered.'
             
             
