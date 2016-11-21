@@ -5,7 +5,7 @@ Published in : pricing_kernels_and_implied_volatility
 
 Description : 'Selects bandwidth for multivariate local linear kernel regression using cross-validation'
 
-Keywords :  kernel regression, bandwidth, cross-validation, multistarting,  local linear, least-squares, kernel, regression, multivariate, risk neutral density
+Keywords :  kernel regression, bandwidth, cross-validation, multistarting,  local linear, least-squares, kernel, regression, multivariate, risk neutral density, numerical optimization
 
 Author : Roman Lykhnenko
 
