@@ -5,7 +5,7 @@ Published in : pricing_kernels_and_implied_volatility
 
 Description : 'Selects bandwidth for multivariate local linear kernel regression using cross-validation'
 
-Keywords :  kernel regression, bandwidth, cross-validation, multistarting,  local linear, least-squares, kernel, regression, multivariate
+Keywords :  kernel regression, bandwidth, cross-validation, multistarting,  local linear, least-squares, kernel, regression, multivariate, risk neutral density
 
 Author : Roman Lykhnenko
 
@@ -18,4 +18,4 @@ Input:
             - C_2012.csv            : Call prices 2012 
             
 Output:
-            - locLinBW.RData        : Bandwidths used for estimation of RND based on local linear kernel regression
+            - locLinBW.RData        : Bandwidths used for estimation of risk neutral density based on local linear kernel regression
