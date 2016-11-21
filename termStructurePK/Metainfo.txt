@@ -20,13 +20,13 @@ Input:
             - timeSeriesDaxVdax.csv    : Time series of VDAX-NEW index and DAX 30 index 
             - C_2012.csv               : Call prices 2012, and values of VDAX-NEW for every trading date
             - locLinBW.RData           : Bandwidths used for estimation of conditional RND based on local linear kernel regression (conditional on VDAX-NEW)
-            - timeSeriesDaxVdax1m.csv : Time series of VDAX-NEW-Subindex 1 and DAX 30 index 
+            - timeSeriesDaxVdax1m.csv  : Time series of VDAX-NEW-Subindex 1 and DAX 30 index 
             - C_2012vdax1m.csv         : Call prices 2012, and values of VDAX-NEW-Subindex 1 for every trading date
             - locLinBWvdax1m.RData     : Bandwidths used for estimation of conditional RND based on local linear kernel regression (conditional on VDAX-NEW-Subindex 1)
-            - timeSeriesDaxVdax2m.csv : Time series of VDAX-NEW-Subindex 2 and DAX 30 index 
+            - timeSeriesDaxVdax2m.csv  : Time series of VDAX-NEW-Subindex 2 and DAX 30 index 
             - C_2012vdax2m.csv         : Call prices 2012, and values of VDAX-NEW-Subindex 2 for every trading date
             - locLinBWvdax2m.RData     : Bandwidths used for estimation of conditional RND based on local linear kernel regression (conditional on VDAX-NEW-Subindex 2)
-            - timeSeriesDaxVdax3m.csv : Time series of VDAX-NEW-Subindex 3 and DAX 30 index 
+            - timeSeriesDaxVdax3m.csv  : Time series of VDAX-NEW-Subindex 3 and DAX 30 index 
             - C_2012vdax3m.csv         : Call prices 2012, and values of VDAX-NEW-Subindex 3 for every trading date
             - locLinBWvdax3m.RData     : Bandwidths used for estimation of conditional RND based on local linear kernel regression (conditional on VDAX-NEW-Subindex 3)
             
