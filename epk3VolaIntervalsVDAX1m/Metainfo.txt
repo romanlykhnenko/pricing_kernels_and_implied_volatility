@@ -11,7 +11,7 @@ EPK is obtained as a ratio of RND and PD. The panels on the right-hand side of f
 50% and 80% quantiles of VDAX-NEW-Subindex 1 with 95% confidence intervals. Colors from red to blue correspond to increasing values
 of volatility within each interval. All results are shown on a continuously compounded 1-month period returns scale.'
 
-Keywords : pricing kernel, risk neutral density, physical density, kernel regression, volatility, dax, vdax, kernel, regression, risk
+Keywords : pricing kernel, risk neutral density, physical density, kernel regression, volatility, dax, vdax, kernel, regression, risk, risk aversion
 
 See also : epk3VolaIntervalsVDAX, epk3VolaIntervalsVDAX2m, epk3VolaIntervalsVDAX3m, locLinBW, termStructurePK
 
