@@ -1,60 +1,60 @@
 
 [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/banner.png" width="888" alt="Visit QuantNet">](http://quantlet.de/)
 
-## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **epk3VolaIntervalsVDAX2m** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
+## [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/qloqo.png" alt="Visit QuantNet">](http://quantlet.de/) **epk3VolaIntervalsVDAX3m** [<img src="https://github.com/QuantLet/Styleguide-and-FAQ/blob/master/pictures/QN2.png" width="60" alt="Visit QuantNet 2.0">](http://quantlet.de/)
 
 ```yaml
 
-Name of QuantLet : epk3VolaIntervalsVDAX2m
+Name of QuantLet : epk3VolaIntervalsVDAX3m
 
 Published in : pricing_kernels_and_implied_volatility
 
 Description : 'Estimates and plots (yearly) empirical pricing kernels (EPK), risk neutral densities
-(RND) and physical densities (PD) of DAX 30 index return conditional on time to maturity 2 months
-and different levels of VDAX-NEW-Subindex 2 (20 equally spaced numbers from 5% to 95% quantile of
-VDAX-NEW-Subindex 2 in a given year). Local linear kernel regression is used for estimation of the
+(RND) and physical densities (PD) of DAX 30 index return conditional on time to maturity 3 months
+and different levels of VDAX-NEW-Subindex 3 (20 equally spaced numbers from 5% to 95% quantile of
+VDAX-NEW-Subindex 3 in a given year). Local linear kernel regression is used for estimation of the
 conditional risk neutral density and local constant kernel regression is used for estimation of
 conditional physical density. EPK is obtained as a ratio of RND and PD. The panels on the
 right-hand side of figures depict EPK, RND, PD conditional on 20%, 50% and 80% quantiles of
-VDAX-NEW-Subindex 2 with 95% confidence intervals. Colors from red to blue correspond to increasing
+VDAX-NEW-Subindex 3 with 95% confidence intervals. Colors from red to blue correspond to increasing
 values of volatility within each interval. All results are shown on a continuously compounded
-2-months period returns scale.'
+3-months period returns scale.'
 
 Keywords : 'pricing kernel, risk neutral density, physical density, kernel regression, volatility,
 dax, vdax, kernel, regression, risk, risk aversion'
 
-See also : 'epk3VolaIntervalsVDAX, epk3VolaIntervalsVDAX1m, epk3VolaIntervalsVDAX3m, locLinBW,
+See also : 'epk3VolaIntervalsVDAX, epk3VolaIntervalsVDAX2m, epk3VolaIntervalsVDAX1m, locLinBW,
 termStructurePK'
 
 Author : Roman Lykhnenko
 
 Submitted : Roman Lykhnenko
 
-Datafile : C_2012vdax2m.csv, timeSeriesDaxVdax2m.csv, locLinBWvdax2m.RData
+Datafile : C_2012vdax3m.csv, timeSeriesDaxVdax3m.csv, locLinBWvdax3m.RData
 
 Input: 
-- timeSeriesDaxVdax2m.csv: Time series of VDAX-NEW-Subindex 2 and DAX 30 index
-- C_2012vdax2m.csv: Call prices 2012
-- locLinBWvdax2m.RData: 'Bandwidths used for estimation of RND based on local linear kernel
+- timeSeriesDaxVdax3m.csv: Time series of VDAX-NEW-Subindex 3 and DAX 30 index
+- C_2012vdax3m.csv: Call prices 2012
+- locLinBWvdax3m.RData: 'Bandwidths used for estimation of RND based on local linear kernel
 regression'
 
 Output: 
-- listRndPDpkVDAX2m2012.RData: 'Estimated conditional pricing kernels, risk neutral and physical
+- listRndPDpkVDAX3m2012.RData: 'Estimated conditional pricing kernels, risk neutral and physical
 densities'
-- epk3VolaIntervalsVDAX2m_RND2012.png: Plot of estimated conditional risk neutral densities
-- epk3VolaIntervalsVDAX2m_PD2012.png: Plot of estimated conditional physical densities
-- epk3VolaIntervalsVDAX2m_PK2012.png: Plot of estimated conditional pricing kernels
+- epk3VolaIntervalsVDAX3m_RND2012.png: Plot of estimated conditional risk neutral densities
+- epk3VolaIntervalsVDAX3m_PD2012.png: Plot of estimated conditional physical densities
+- epk3VolaIntervalsVDAX3m_PK2012.png: Plot of estimated conditional pricing kernels
 
 Example : 'The estimated conditional pricing kernels, risk neutral and physical densities for year
 2012. For more details see Description.'
 
 ```
 
-![Picture1](epk3VolaIntervalsVDAX2m_PD2012.png)
+![Picture1](epk3VolaIntervalsVDAX3m_PD2012.png)
 
-![Picture2](epk3VolaIntervalsVDAX2m_PK2012.png)
+![Picture2](epk3VolaIntervalsVDAX3m_PK2012.png)
 
-![Picture3](epk3VolaIntervalsVDAX2m_RND2012.png)
+![Picture3](epk3VolaIntervalsVDAX3m_RND2012.png)
 
 
 ### R Code:
@@ -70,9 +70,9 @@ lapply(libraries, library, quietly = TRUE, character.only = TRUE)
 # set working directory
 setwd("/home/rama/Masterarbeit/pricing_kernels_and_implied_volatility")
 
-load("epk3VolaIntervalsVDAX2m/locLinBWvdax2m.RData")
+load("epk3VolaIntervalsVDAX3m/locLinBWvdax3m.RData")
 
-timeToMaturity         = 2/12
+timeToMaturity         = 3/12
 horizonPhysicalDensity = 300
 
 for (trading_year in 2012) {
@@ -80,7 +80,7 @@ for (trading_year in 2012) {
   year = trading_year
   
   # path to Data 
-  pathToData = paste("epk3VolaIntervalsVDAX2m/C_", as.character(year), "vdax2m", 
+  pathToData = paste("epk3VolaIntervalsVDAX3m/C_", as.character(year), "vdax3m", 
                      ".csv", sep = "")
   
   # read option data
@@ -88,7 +88,7 @@ for (trading_year in 2012) {
   C_2012 = na.omit(C_2012)
   
   # load Dax and VDax data
-  bothIndexesDax      = read.csv("epk3VolaIntervalsVDAX2m/timeSeriesDaxVdax2m.csv")
+  bothIndexesDax      = read.csv("epk3VolaIntervalsVDAX3m/timeSeriesDaxVdax3m.csv")
   bothIndexesDax      = bothIndexesDax[, c("Date", "DAX", "VDAX")]
   bothIndexesDax$Date = as.Date(as.character(bothIndexesDax$Date), "%Y-%m-%d")
   
@@ -313,7 +313,8 @@ for (trading_year in 2012) {
     
     # local linear regresson with squared residual as a dependent variable
     coefficientsResidualsReg = mclapply(moneyness_est, locLinRegressionForRes, 
-                                        tauValue = ttmFraction, vdaxValue = VDAX_level, data = optionDataForResiduals, 
+                                        tauValue = ttmFraction, vdaxValue = VDAX_level,
+                                        data = optionDataForResiduals, 
                                         output = "squaredResid")
     
     conditionalVariance = sapply(coefficientsResidualsReg, FUN = function(listItem) {
@@ -487,7 +488,7 @@ for (trading_year in 2012) {
        lowVolaIntUp, 
        mediumVolaIntUp, 
        highVolaIntUp, 
-       file = paste0("epk3VolaIntervalsVDAX2m/listRndPDpkVDAX2m", year, ".RData"))
+       file = paste0("epk3VolaIntervalsVDAX3m/listRndPDpkVDAX3m", year, ".RData"))
   
   # quantiles of VDAX used for CI 
   quantile_20 = quantile(bothIndexesDaxQuant$VDAX, 0.2)
@@ -501,10 +502,10 @@ for (trading_year in 2012) {
   plotPK = function(yearItem){
     
     # load precomputed objects
-    load(paste0("epk3VolaIntervalsVDAX2m/listRndPDpkVDAX2m", as.character(yearItem), ".RData"))
+    load(paste0("epk3VolaIntervalsVDAX3m/listRndPDpkVDAX3m", as.character(yearItem), ".RData"))
     
     # add aditional label to every plot
-    remarkPlot = "VDAX2m"
+    remarkPlot = "VDAX3m"
     
     # prepare for plotting
     
@@ -644,8 +645,8 @@ for (trading_year in 2012) {
     
     
     # specify name of the plot to be saved
-    plotName = paste("epk3VolaIntervalsVDAX2m/",
-                     "epk3VolaIntervalsVDAX2m",
+    plotName = paste("epk3VolaIntervalsVDAX3m/",
+                     "epk3VolaIntervalsVDAX3m",
                      "_",
                      "PK",
                      as.character(year),
@@ -660,10 +661,10 @@ for (trading_year in 2012) {
   plotPD = function(yearItem){
     
     # load precomputed objects
-    load(paste0("epk3VolaIntervalsVDAX2m/listRndPDpkVDAX2m", as.character(yearItem), ".RData"))
+    load(paste0("epk3VolaIntervalsVDAX3m/listRndPDpkVDAX3m", as.character(yearItem), ".RData"))
     
     # add aditional label to every plot
-    remarkPlot = "VDAX2m"
+    remarkPlot = "VDAX3m"
     
     # prepare for plotting
     
@@ -802,8 +803,8 @@ for (trading_year in 2012) {
     
     
     # specify name of the plot to be saved
-    plotName = paste("epk3VolaIntervalsVDAX2m/",
-                     "epk3VolaIntervalsVDAX2m",
+    plotName = paste("epk3VolaIntervalsVDAX3m/",
+                     "epk3VolaIntervalsVDAX3m",
                      "_PD",
                      as.character(year),
                      ".png", sep = "")
@@ -815,10 +816,10 @@ for (trading_year in 2012) {
   plotRND = function(yearItem){
     
     # load precomputed objects
-    load(paste0("epk3VolaIntervalsVDAX2m/listRndPDpkVDAX2m", as.character(yearItem), ".RData"))
+    load(paste0("epk3VolaIntervalsVDAX3m/listRndPDpkVDAX3m", as.character(yearItem), ".RData"))
     
     # add aditional label to every plot
-    remarkPlot = "VDAX2m"
+    remarkPlot = "VDAX3m"
     
     # prepare for plotting
     
@@ -953,8 +954,8 @@ for (trading_year in 2012) {
     
     
     # specify name of the plot to be saved
-    plotName = paste("epk3VolaIntervalsVDAX2m/",
-                     "epk3VolaIntervalsVDAX2m",
+    plotName = paste("epk3VolaIntervalsVDAX3m/",
+                     "epk3VolaIntervalsVDAX3m",
                      "_",
                      "RND",
                      as.character(year),

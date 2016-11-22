@@ -19,13 +19,37 @@ density. Moreover, 95% confidence intervals have been calculated for PK, RND and
 compounded 1-month period returns scale.'
 
 Keywords : 'pricing kernel, risk neutral density, physical density, kernel regression, volatility,
-dax, vdax, kernel, regression, risk'
+dax, vdax, kernel, regression, risk, risk aversion'
 
 Author : Roman Lykhnenko
 
 Submitted : Roman Lykhnenko
 
-Datafile : C_2012.csv, timeSeriesDaxVdax.csv, bandwidthMonKfoldCVyears.RData
+Datafile : C_2012.csv, timeSeriesDaxVdax.csv, locLinBW.RData
+
+Input: 
+- timeSeriesDaxVdax.csv: Time series of VDAX-NEW index and DAX 30 index
+- C_2012.csv: Call prices 2012
+- locLinBW.RData: Bandwidths used for estimation of RND based on local linear kernel regression
+
+Output: 
+- rndLocLin_PDlocLin_allVolaMain2012.RData: 'Estimated conditional pricing kernels, risk neutral
+and physical densities'
+- epkLocLinRndLocLinPD_PD_2012.png: 'Plot of estimated physical densities conditional on 20% (red
+curve), 40% (green curve) and 60% (blue curve) quantiles of volatility index VDAX-NEW'
+- epkLocLinRndLocLinPD_PD_CI_2012.png: 'Plot of estimated physical density conditioned by 40%
+quantile of VDAX-NEW and time to maturity 1 month with 95% confidence intervals'
+- epkLocLinRndLocLinPD_PK_2012.png: 'Plot of estimated pricing kernels conditional on 20% (red
+curve), 40% (green curve) and 60% (blue curve) quantiles of volatility index VDAX-NEW'
+- epkLocLinRndLocLinPD_PK_CI_2012.png: 'Plot of estimated pricing kernel conditioned by 40%
+quantile of VDAX-NEW and time to maturity 1 month with 95% confidence intervals'
+- epkLocLinRndLocLinPD_RND_2012.png: 'Plot of estimated risk neutral densities conditional on 20%
+(red curve), 40% (green curve) and 60% (blue curve) quantiles of volatility index VDAX-NEW'
+- epkLocLinRndLocLinPD_RND_CI_2012.png: 'Plot of estimated risk neutral density conditioned by 40%
+quantile of VDAX-NEW and time to maturity 1 month with 95% confidence intervals'
+
+Example : 'The estimated conditional pricing kernels, risk neutral and physical densities for year
+2012. For more details see Description.'
 
 ```
 

@@ -20,15 +20,28 @@ intervals. Colors from red to blue correspond to increasing values of volatility
 interval. All results are shown on a continuously compounded 1-month period returns scale.'
 
 Keywords : 'pricing kernel, risk neutral density, physical density, kernel regression, volatility,
-dax, vdax, kernel, regression, risk'
+dax, vdax, kernel, regression, risk, risk aversion'
 
-See also : epk3VolaIntervalsVDAX1m, epk3VolaIntervalsVDAX2m, epk3VolaIntervalsVDAXm
+See also : 'epk3VolaIntervalsVDAX1m, epk3VolaIntervalsVDAX2m, epk3VolaIntervalsVDAX3m, locLinBW,
+termStructurePK'
 
 Author : Roman Lykhnenko
 
 Submitted : Roman Lykhnenko
 
-Datafile : C_2012.csv, timeSeriesDaxVdax.csv, bandwidthMonKfoldCVyears.RData
+Datafile : C_2012.csv, timeSeriesDaxVdax.csv, locLinBW.RData
+
+Input: 
+- timeSeriesDaxVdax.csv: Time series of VDAX-NEW index and DAX 30 index
+- C_2012.csv: Call prices 2012
+- locLinBW.RData: Bandwidths used for estimation of RND based on local linear kernel regression
+
+Output: 
+- listRndPDpkMain2012.RData: 'Estimated conditional pricing kernels, risk neutral and physical
+densities'
+- epk3VolaIntervalsVDAX_main_RND2012.png: Plot of estimated conditional risk neutral densities
+- epk3VolaIntervalsVDAX_main_PD2012.png: Plot of estimated conditional physical densities
+- epk3VolaIntervalsVDAX_main_PK2012.png: Plot of estimated conditional pricing kernels
 
 Example : 'The estimated conditional pricing kernels, risk neutral and physical densities for year
 2012. For more details see Description.'
